@@ -1,0 +1,25 @@
+COMPANY : CODTECH IT SOLUTIONS
+
+NAME : Bushapogu Lisa Susana
+
+INTERN ID : CT04DK165
+
+DOMAIN : Java Programming
+
+DURATION : April15th, 2025 to May 15th, 2025.
+
+MENTOR : NEELA SANTOSH KUMAR
+
+DESCRIPTION:
+
+Developing a multithreaded chat application using Java is a valuable project for understanding core networking concepts, socket programming, and multithreading. This project involves building both the server-side and client-side components of a chat system, where multiple users can connect to a central server and exchange messages in real time. The key technologies used are Java sockets for network communication and Java threads for handling multiple clients simultaneously. The primary deliverable is a fully functional chat application that demonstrates real-time messaging between clients through a shared server.
+
+The foundation of the application is the server, which listens for incoming client connections on a specified port. Using ServerSocket, the server can accept connections from multiple clients. Once a client connects, the server creates a new thread to manage communication with that specific client. This is achieved using the Thread class or implementing the Runnable interface in Java. By spawning a separate thread for each client, the server can continue accepting new connections while maintaining active conversations with existing clients. Each thread is responsible for receiving messages from one client and broadcasting them to all other connected clients. This ensures that all users can participate in a group chat environment.
+
+On the client side, the application uses a Socket object to connect to the server’s IP address and port. After establishing a connection, the client sends its messages to the server and listens for incoming messages from other users. This typically requires two separate threads on the client side—one for reading user input and sending it to the server, and another for receiving messages from the server and displaying them. This multithreaded structure allows for smooth, non-blocking communication, giving the appearance of real-time interaction.
+
+One of the key challenges in this project is managing concurrency and ensuring that the shared resources, like the list of connected clients, are accessed in a thread-safe manner. Proper synchronization techniques are essential to avoid issues like race conditions or data inconsistency. Furthermore, exception handling plays a critical role in maintaining the stability of the application, especially when clients disconnect unexpectedly or network errors occur.
+
+To enhance the user experience, the chat application can include features such as usernames, private messaging, or even a simple graphical user interface using JavaFX or Swing. Logging chat history and supporting server-side commands (e.g., to kick a user or shut down the server) can also be added to make the system more robust and manageable.
+
+The final outcome is a complete Java-based chat system capable of supporting multiple users simultaneously with real-time communication. This project not only strengthens understanding of Java networking and multithreading but also demonstrates how distributed systems manage concurrent clients. It is an excellent example of practical software engineering, where theoretical concepts are implemented to build interactive, real-world applications.
